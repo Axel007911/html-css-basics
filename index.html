@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My awesome beer page</title>
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+        <script src="./js/script.js" language="JavaScript"></script>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    </head>
+    <body>
+        <h1>Awesome beer page</h1>
+        <h2>About beer</h2>
+        <div class="beer-text">
+           <p>
+                Beer has a rich history that dates back thousands of years, with evidence of its consumption found in 
+                ancient civilizations such as Mesopotamia and Egypt. It is believed to be one of the oldest fermented 
+                beverages crafted by humanity. The process of brewing beer evolved over time, with early civilizations 
+                using ingredients like barley, wheat, and water to create rudimentary brews. As societies advanced, beer 
+                became an integral part of daily life, playing roles in religious rituals, social gatherings, and even 
+                medical practices.
+           </p>
+
+         <p>
+                The brewing industry experienced significant developments during the Middle Ages, as monasteries became centers 
+                for beer production and refinement. Monks played a crucial role in advancing brewing techniques and standardizing 
+                recipes, leading to the establishment of brewing traditions that continue to influence the industry today. With the 
+                Industrial Revolution came mechanization and the mass production of beer, transforming brewing from a craft practiced 
+                in homes and small breweries to a globalized industry dominated by large-scale commercial operations. Despite these 
+                advancements, artisanal and craft brewing movements have emerged, emphasizing quality, flavor, and experimentation. 
+                Today, beer culture thrives worldwide, with diverse styles, flavors, and brewing methods celebrated by enthusiasts 
+                and connoisseurs alike. <a href="#id-store">Visit our store</a>
+         </p>
+        </div>
+        <div class="beer-varieties">
+            <table class="beer-table">
+                    <tr class="table-heading">
+                        <td>Lager</td>
+                        <td>IPA <br>(India Pale Ale)</td>
+                        <td>Stout</td>
+                        <td>Pale Ale</td>
+                    </tr>
+                    <tr class="table-text">
+                        <td>Lager is characterized by its clean, crisp taste and smooth finish, making it immensely popular worldwide. It undergoes a cold fermentation process, resulting in a refreshing beer with a light body and subtle malt sweetness. Variations like Pilsner and Helles offer distinct flavor profiles, from the crisp bitterness of hops in a Pilsner to the malty sweetness of a Helles.</td>
+                        <td>IPA is renowned for its bold hop flavors and aromas, ranging from citrus and pine to tropical fruits. Originating from England, American IPA variants have become particularly popular, showcasing intense hop bitterness and vibrant aromatics. With its assertive character and wide range of styles, IPA has become a cornerstone of the craft beer movement.</td>
+                        <td>Stout is prized for its rich, complex flavors, often featuring notes of roasted coffee, chocolate, and dark fruits. Varieties like Dry Stout and Imperial Stout offer diverse experiences, from a dry, sessionable beer to a robust, high-alcohol brew. Stout's velvety texture and full-bodied profile make it a favorite among those seeking a bold and satisfying drinking experience.</td>
+                        <td>Pale Ale is celebrated for its balanced combination of malt sweetness and hop bitterness, offering a refreshing yet flavorful drinking experience. American Pale Ale showcases vibrant hop character, with citrus and floral notes complementing a caramel malt backbone. English Bitter, on the other hand, emphasizes maltiness, with subtle hop bitterness providing balance to the beer's overall profile.</td>
+                    </tr>
+
+            </table>
+        </div>
+       <h2 id="id-store">Our beer store</h2>
+       <div class="shop-block">
+           <h3>Beer</h3>
+            <div>
+                <table class="shop">
+                    <tr class="beer-img">
+                        <td>
+                            <img class="beer-image" src="/img/augustiner.jpg" alt="augustiner-beer">
+        
+                        </td>     
+                        <td>
+                            <img class="beer-image" src="/img/zywiec.png" alt="augustiner-beer">
+        
+                        </td>    
+                        <td>
+                            <img class="beer-image" src="/img/ksaigace.png" alt="augustiner-beer">
+        
+                        </td>    
+                        <td>
+                            <img class="beer-image" src="/img/paulaner.jpg" alt="augustiner-beer">
+        
+                        </td>              
+                    </tr>
+                    <tr class="beer-name">
+                        <td>Augustiner</td>
+                        <td>Zywiec</td>
+                        <td>Ksiagace</td>
+                        <td>Paulaner</td>
+                    </tr>
+                    <tr class="beer-info">
+                        <td>
+                            <ul>
+                                <li>Volume : 0.5l</li>
+                                <li>Alc.: 4,5%</li>
+                                <li>Taste : Awesome</li>
+                                <li>Avialability : Out of order</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Volume : 0.5l</li>
+                                <li>Alc.: 4,2%</li>
+                                <li>Taste : Good</li>
+                                <li>Avialability : Yes</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Volume : 0.4l</li>
+                                <li>Alc.: 5,9%</li>
+                                <li>Taste : Good</li>
+                                <li>Avialability : Yes</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Volume : 0.46l</li>
+                                <li>Alc.: 4,8%</li>
+                                <li>Taste : Nice</li>
+                                <li>Avialability : Yes</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="price-vantity">
+                        <td>
+                            Price - <span class="beer-price"> 4$ </span> x
+                            <select class="vantity" name="vantity" id="vantity" disabled>
+                                <option value="-">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td>
+                            Price - <span class="beer-price"> 3.5$  </span>x
+                            <select class="vantity" name="vantity" id="vantity">
+                                <option value="-">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td>
+                            Price - <span class="beer-price"> 8$  </span>x
+                            <select class="vantity" name="vantity" id="vantity">
+                                <option value="-">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td>
+                            Price - <span class="beer-price"> 5$  </span>x
+                            <select class="vantity" name="vantity" id="vantity">
+                                <option value="-">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+       </div>
+        <div class="shop-block">
+            <h3>Snacks</h3>
+            <input type="checkbox" class="snack-checkbox">Chips
+            <input type="checkbox" class="snack-checkbox">Salted Dry Fish
+            <input type="checkbox" class="snack-checkbox">Jerky
+            <input type="checkbox" class="snack-checkbox">Fries
+            <div class="notification">
+                <p>* all snacks variety is 100g.</p>
+            </div>
+        </div>
+        <h2>Place your order</h2>
+    <form action="#" method="get">
+        <div class="shop-block">
+            <h3>Client Info</h3>
+            <div class="sex">
+                Gender:
+                <input type="radio" name="male" id="sex"> Male
+                <input type="radio" name="female" id="sex"> Female
+            </div>
+            <br>
+            <div class="name">
+                Name:
+                <input type="text" class="input">
+                Surname:
+                <input type="text" class="input">
+            </div>
+        <br>
+            <div class="confirmation">
+                <input type="file" name="passport" id="#"><span class="notification">*Please, upload your passport or driver license to prove your age</span>
+            </div>
+            <br>
+            <div class="comments">
+                <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Comments..."></textarea>
+            </div>
+        <div class="auth">
+            <div class="login">
+               <p>Login:</p>
+                <input type="text" class="input" placeholder="e-mail">
+            </div>
+            <div class="pass">
+                <p>Password:</p>
+                <input type="password" class="input" placeholder="password">
+            </div>
+
+            <div class="auth-buttons">
+                <button class="submit" type="submit">Submit</button>
+                <button class="submit" type="reset">Reset</button>
+                <button class="submit" type="button" onclick="helloWorld()" >Helloworld</button>
+
+            </div>
+        
+        </div>
+        </div>
+    </form>
+    <br><br><br><br><br>
+    </body>
+
+</html>
