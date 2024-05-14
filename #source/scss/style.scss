@@ -27,17 +27,17 @@
 
   }
 
-// @media (max-width:1200px) {
-//   .main {
-//     max-width: 970px;
-//   }
-// }
+@media (max-width:1200px) {
+  .main {
+    max-width: 970px;
+  }
+}
 
-// @media (max-width:992px) {
-//   .main {
-//     max-width: 750px;
-//   }
-// }
+@media (max-width:992px) {
+  .main {
+    max-width: 750px;
+  }
+}
 
 // @media (max-width:767px) {
 //   .main {
@@ -92,7 +92,6 @@
     z-index: -1;
   }
   .beer-text {
-    margin: 20px 0px 0px 0px;
     max-width: 1000px;
     // height: 200px;
     display: block;
@@ -251,6 +250,8 @@
 
   &__price {
     text-align: center;
+    font-size: 20px;
+    font-weight: 600;
   }
 }
 
@@ -264,6 +265,11 @@
   }
 
   .client-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
     display: flex;
     flex-direction: column;
   }
@@ -284,6 +290,14 @@
     border-radius: 5px;
     padding: 5px;
   }
+
+  .auth-buttons {
+    position: relative;
+    top: 0;
+    left: 0;
+
+  }
+
   button {
     background-color: #cca447;
     margin: 30px 10px;
@@ -292,14 +306,25 @@
     font-size: 20px;
     font-weight: bold;
     padding: 10px 20px;
+    box-shadow: 0 5px 5px #623d01;
+    position: relative;
+    top: 0;left: 0;
+    transition-duration: 0.5s;
   }
   button:hover {
     color: #cca447;
     background-color: #623d01;
+    transition-duration: 0.5s;
+    box-shadow: 0 2px 5px #623d01;
+    position: relative;
+    top: 3px;
+    left: 0;
+
   }
   button:active {
     color: white;
     background-color: #ae3700;
+
   }
   textarea {
     border: 1px solid #623d01;
@@ -318,13 +343,21 @@
     border-radius: 30px;
     padding: 5px;
     text-wrap: nowrap;
-    
+    box-shadow: 0 5px 5px #623d01;
+    position: relative;
+    top: 0;left: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+
   }
   .store-link:hover {
     color: brown;
     border: 1px solid brown;
     background-color: rgb(235, 223, 178);
-   
+    box-shadow: 0 2.5px 5px #623d01;
+    position: relative;
+    top: 2.5px;
+    left: 0;
   }
 
 

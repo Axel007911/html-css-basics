@@ -116,6 +116,16 @@ body {
           align-items: center;
 }
 
+@media (max-width: 1200px) {
+  .main {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .main {
+    max-width: 750px;
+  }
+}
 h1 {
   text-align: center;
   font-size: 40px;
@@ -165,7 +175,6 @@ h3 {
 }
 
 .beer-text {
-  margin: 20px 0px 0px 0px;
   max-width: 1000px;
   display: block;
   padding: 10px;
@@ -310,6 +319,8 @@ h3 {
 }
 .shop-block__price {
   text-align: center;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .snacks {
@@ -327,6 +338,16 @@ h3 {
 }
 
 .client-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,6 +376,12 @@ h3 {
   padding: 5px;
 }
 
+.auth-buttons {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 button {
   background-color: #cca447;
   margin: 30px 10px;
@@ -363,11 +390,25 @@ button {
   font-size: 20px;
   font-weight: bold;
   padding: 10px 20px;
+  -webkit-box-shadow: 0 5px 5px #623d01;
+          box-shadow: 0 5px 5px #623d01;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 button:hover {
   color: #cca447;
   background-color: #623d01;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-box-shadow: 0 2px 5px #623d01;
+          box-shadow: 0 2px 5px #623d01;
+  position: relative;
+  top: 3px;
+  left: 0;
 }
 
 button:active {
@@ -393,12 +434,26 @@ textarea:focus {
   border-radius: 30px;
   padding: 5px;
   text-wrap: nowrap;
+  -webkit-box-shadow: 0 5px 5px #623d01;
+          box-shadow: 0 5px 5px #623d01;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .store-link:hover {
   color: brown;
   border: 1px solid brown;
   background-color: rgb(235, 223, 178);
+  -webkit-box-shadow: 0 2.5px 5px #623d01;
+          box-shadow: 0 2.5px 5px #623d01;
+  position: relative;
+  top: 2.5px;
+  left: 0;
 }
 
 .a:hover > .b {
