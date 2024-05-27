@@ -4,9 +4,9 @@
         <title>My awesome beer page</title>
         <link href="./css/style.css" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-        <script src="./js/script.js" language="JavaScript"></script>
+        <!-- <script src="./js/script.js" language="JavaScript"></script> -->
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width">;
+        <meta name="viewport" content="width=device-width">
 
     </head>
     <body>
@@ -90,6 +90,9 @@
                                     <option value="5">5</option>
                                 </select>
                             </div>
+                            <div class="to-cart">
+                                <button class="button to-cart__button" type="button">To Cart</button>
+                            </div>
                         </div>
                         
                         <div class="shop-block__item">
@@ -118,6 +121,9 @@
                                     <option value="4">4</option>
                                     <option value="5">5</option>
                                 </select>
+                            </div>
+                            <div class="to-cart">
+                                <button class="button to-cart__button" type="button">To Cart</button>
                             </div>
                         </div>
 
@@ -150,6 +156,9 @@
                                     <option value="5">5</option>
                                 </select>
                             </div>
+                            <div class="to-cart">
+                                <button class="button to-cart__button" type="button">To Cart</button>
+                            </div>
                         </div>
                         
                         <div class="shop-block__item">
@@ -180,9 +189,16 @@
                                     <option value="5">5</option>
                                 </select>
                             </div>
+                            <div class="to-cart">
+                                <button class="button to-cart__button" type="button">To Cart</button>
+                            </div>
                         </div>
-
                 </div>
+                <!-- <div class="success-to-cart">
+                    <div class="success-to-cart__content">
+                        Successfully added
+                    </div>
+                </div> -->
             </div>
        </div>
             <div class="shop-block snacks">
@@ -206,48 +222,82 @@
         <div class="shop-block client-info">
             <h3>Client Info</h3>
             <div class="sex">
-                Gender:
-                <input type="radio" name="male" id="sex"> Male
-                <input type="radio" name="female" id="sex"> Female
+                Sex:
+                <input type="radio" name="sex" id="sexMale" value="male"> Male
+                <input type="radio" name="sex" id="sexFemale" value="female"> Female
+                <p class="sex__error-message red-blinking" style="display: none;">Please, select your sex</p>
             </div>
             <br>
             <div class="name">
                 Name:
-                <input type="text" class="input">
+                <input type="text" class="input input__name">
+                <p class="name__error-message red-blinking" style="display: none;">Please, enter your name</p>
 
                 Surname:
-                <input type="text" class="input">
+                <input type="text" class="input input__surname">
+                <p class="surname__error-message red-blinking" style="display: none;">Please, enter your surname</p>
+
             </div>
         <br>
             <div class="confirmation">
-                <input type="file" name="passport" id="#"><span class="notification">*Please, upload your passport or driver license to prove your age</span>
+                <input class="confirmation__upload" type="file" name="passport" id="#">
+                <br>
+                <span id='license-notification'class="notification">*Please, upload your passport or driver license to prove your age</span>
             </div>
             <br>
             <div class="comments">
-                <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Comments..."></textarea>
+                <textarea maxlength="60" name="comments" id="comments" cols="30" rows="5" placeholder="Comments..."></textarea>
+                <div class="comments__symbols-left"><span>60</span> symbols to go</div>
             </div>
         <div class="auth">
             <div class="login">
                <p>Login:</p>
-                <input type="text" class="input" placeholder="e-mail">
+                <input type="email" class="input login__input" placeholder="e-mail">
+                <p class="login__error-message red-blinking" style="display: none;">Please, enter your e-mail</p>
+                <p class="login__incorrect-message red-blinking" style="display: none;">Your e-mail is incorrect</p>
+
             </div>
-            <div class="pass">
+            <div class="password">
                 <p>Password:</p>
-                <input type="password" class="input" placeholder="password">
+                <input type="password" class="input password__input" placeholder="password">
+                <p class="password__error-message red-blinking" style="display: none;">Please, enter your password</p>
+            </div>
+
+            <div class="promocodes">
+ 
+                <button class="promocodes__button_add">Add promocode</button>
+                <button class="promocodes__button_remove">Remove promocode</button>
+                <ul class="promocodes__list">
+                    
+                </ul>
+
             </div>
 
             <div class="auth-buttons">
-                <button class="button" type="submit">Submit</button>
+                <button class="button submit-button" type="submit">Submit</button>
                 <button class="button" type="reset">Reset</button>
                 <button class="button" type="button" onclick="helloWorld()" >Helloworld</button>
 
-            </div>
-        
+                <button class="button brewery__button" type="button">Get Lucky</button>
+            </div>  
         </div>
         </div>
     </form>
     <br><br><br><br><br>
 </div>
+
+<div class="modal__wrap">
+    <div class="modal__content">
+        <span class="close">&times;</span>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam magni natus, 
+            distinctio blanditiis at omnis consequuntur esse sit modi, alias quos asperiores 
+            dolor rem est iure officia repudiandae voluptatum velit!</p>
+    </div>
+</div>
+        <script src="./js/script.js"></script>
+
+
+        
     </body>
 
 </html>
